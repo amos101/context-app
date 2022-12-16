@@ -1,5 +1,5 @@
-import { useContext } from "react"
 import Link from "next/link"
+import { useContext } from "react"
 import AppContext from "../components/AppContext"
 import Component1 from "../components/Component1"
 
@@ -13,9 +13,9 @@ export default function Home() {
 
   return (
     <div style={{textAlign: 'center'}}>
-      <h1>page1</h1>
-      <Link rel="stylesheet" href="/page2">
-        <p>go page2</p>
+      <h1>page2</h1>
+      <Link rel="stylesheet" href="/">
+        <p>go page1</p>
       </Link>
       <p>{context.nameContext}</p>
       <br />

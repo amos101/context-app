@@ -1,6 +1,15 @@
 import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { useState } from "react"
+import AppContext from "../components/AppContext"
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const App = ({ Component, pageProps }: any) => {
+  const [nameContext, setNameContext] = useState("Amos")
+
+  return (
+    <AppContext.Provider value={{nameContext, setNameContext}}>
+      <Component {...pageProps} />
+    </AppContext.Provider>
+  )
 }
+
+export default App
