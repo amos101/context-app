@@ -15,7 +15,7 @@ export default function Home() {
     <div style={{textAlign: 'center'}}>
       <h1>page2</h1>
       <Link rel="stylesheet" href="/">
-        <p>go page1</p>
+        <h2 style={{color: 'blue'}}>go page1</h2>
       </Link>
       <p>{context.nameContext}</p>
       <br />
